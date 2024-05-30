@@ -58,7 +58,7 @@ function Sidebar() {
     <div>
       <aside className="main-sidebar sidebar-dark-primary elevation-4">
         {/* Brand Logo */}
-        <a href="index3.html" className="brand-link">
+        <Link href="/home" className="brand-link">
           <img
             src="dist/img/AdminLTELogo.png"
             alt="AdminLTE Logo"
@@ -66,7 +66,7 @@ function Sidebar() {
             style={{ opacity: ".8" }}
           />
           <span className="brand-text font-weight-light">AdminLTE 3</span>
-        </a>
+        </Link>
         {/* Sidebar */}
         <div className="sidebar">
           {/* Sidebar user panel (optional) */}
