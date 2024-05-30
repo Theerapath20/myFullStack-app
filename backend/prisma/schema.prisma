@@ -14,9 +14,17 @@ datasource db {
 }
 
 model User {
-  id Int @id @default(autoincrement())
-  name String
-  user String
-  pass String
+  id     Int    @id @default(autoincrement())
+  name   String
+  user   String
+  pass   String
   status String @default("use")
+}
+
+model Product {
+  id    Int    @id @default(autoincrement())
+  name  String
+  cost  Int
+  price Int
+  img   String
 }

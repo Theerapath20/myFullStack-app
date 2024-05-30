@@ -5,10 +5,21 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const userController = require("./controllers/UserController");
+const productController = require("./controllers/ProduceController")
+
+
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
+
+
+
 app.use("/user", userController);
+app.use("/product" , productController)
+
+
+
 
 app.listen(3001, () => console.log("server is running on port 3001"));
